@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>美国对华芯片制裁周报 · 归档主页</title>
+<meta name="description" content="每周汇总美国对华半导体制裁、出口管制与禁令动态，基于一手官方资料（联邦公报、BIS、USTR、财政部、国会等）整理，附原文链接。">
+<style>
+  :root{
+    --bg:#f7f8fa; --card:#ffffff; --ink:#1f2937; --muted:#6b7280;
+    --accent:#1d4ed8; --accent-light:#eff6ff; --border:#e5e7eb;
+    --tag:#eef2ff; --tag-ink:#3730a3;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:"Microsoft YaHei","PingFang SC","Noto Sans CJK SC","Source Han Sans SC",sans-serif;
+    line-height:1.75;font-size:15.5px;}
+  .wrap{max-width:860px;margin:0 auto;padding:32px 20px 64px;}
+  header.hero{background:linear-gradient(135deg,#1e3a8a,#1d4ed8);color:#fff;
+    border-radius:14px;padding:40px 36px 32px;margin-bottom:14px;}
+  header.hero h1{margin:0 0 12px;font-size:28px;letter-spacing:1px;}
+  header.hero p.sub{margin:0;font-size:15px;opacity:.92;max-width:640px;}
+  header.hero .meta{font-size:13px;opacity:.75;margin-top:16px;}
+  .stats{display:flex;gap:12px;margin:0 0 28px;flex-wrap:wrap;}
+  .stat{flex:1;min-width:150px;background:var(--card);border:1px solid var(--border);
+    border-radius:12px;padding:14px 18px;text-align:center;}
+  .stat .num{font-size:24px;font-weight:700;color:var(--accent);}
+  .stat .lbl{font-size:12.5px;color:var(--muted);}
+  h2{font-size:20px;border-left:5px solid var(--accent);padding-left:12px;margin:36px 0 16px;color:#111827;}
+  .note{background:var(--accent-light);border:1px solid #bfdbfe;border-radius:10px;
+    padding:13px 18px;font-size:13.5px;color:#1e40af;margin:10px 0 0;}
+  ul.archive{list-style:none;margin:0;padding:0;}
+  ul.archive>li{margin-bottom:14px;}
+  ul.archive a.report-link{display:block;background:var(--card);border:1px solid var(--border);
+    border-radius:12px;padding:20px 24px;text-decoration:none;color:inherit;
+    box-shadow:0 1px 2px rgba(0,0,0,.04);transition:border-color .15s, box-shadow .15s;}
+  ul.archive a.report-link:hover{border-color:var(--accent);box-shadow:0 3px 10px rgba(29,78,216,.10);}
+  ul.archive .title{font-size:17px;font-weight:600;color:#111827;}
+  ul.archive .title .tag{display:inline-block;background:var(--tag);color:var(--tag-ink);
+    font-size:12px;border-radius:6px;padding:1px 8px;margin-left:8px;vertical-align:2px;font-weight:normal;}
+  ul.archive .title .tag.latest{background:#ecfdf5;color:#065f46;}
+  ul.archive .desc{font-size:14px;color:var(--muted);margin:6px 0 4px;}
+  ul.archive .date{font-size:12.5px;color:var(--accent);}
+  footer{margin-top:44px;font-size:12.5px;color:var(--muted);border-top:1px solid var(--border);padding-top:14px;}
+  a{color:var(--accent);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <h1>美国对华芯片制裁周报</h1>
+  <p class="sub">每周自动汇总美国政府对华半导体制裁、出口管制与禁令动态。全部内容基于官方一手资料——联邦公报、商务部 BIS、白宫、USTR、财政部、国会——并附原文链接，供研究跟踪使用。</p>
+  <div class="meta">发布频率：每周六 ｜ 维护：leoheihei ｜ 仓库：chipset_sanction_on_China</div>
+</header>
+
+<div class="stats">
+  <div class="stat"><div class="num" id="stat-count">1</div><div class="lbl">已发布期数</div></div>
+  <div class="stat"><div class="num">每周六</div><div class="lbl">更新频率</div></div>
+  <div class="stat"><div class="num">官方一手</div><div class="lbl">资料来源</div></div>
+</div>
+
+<h2>周报归档</h2>
+<ul class="archive">
+<!-- ARCHIVE:START 新一期周报请插入此注释正下方（最新在前） -->
+<li>
+  <a class="report-link" href="reports/芯片制裁周报_2026-11-21.html">
+    <div class="title">2026-11-14 至 2026-11-21 周报<span class="tag latest">最新</span><span class="tag">首发刊</span></div>
+    <div class="desc">BIS《解决先进半导体远程访问问题》IFR 发布并生效（11-19），首创数据中心远程算力管制；白宫深圳会晤后口径收紧；国会推动芯片管制法案纳入 NDAA；含当前生效措施总表。</div>
+    <div class="date">发布于 2026-11-21</div>
+  </a>
+</li>
+<!-- ARCHIVE:END -->
+</ul>
+
+<div class="note">每期周报为独立单文件页面，可离线打开；报告内所有政策条目均附联邦公报 / BIS / 白宫 / USTR / 财政部 / 国会等官方原文链接。</div>
+
+<h2>关于本项目</h2>
+<div class="note" style="background:var(--card);border-color:var(--border);color:var(--ink);font-size:14px;">
+本仓库以 GitHub Pages 方式发布每周定期生成的《美国对华芯片制裁周报》。统计范围覆盖：对华芯片出口管制新规（先进计算芯片、半导体设备、EDA、HBM）、实体清单增删、FDPR 与"脚注"规则、对华投资禁令、301/232 关税、行政令、国会立法动向、联合管制协调，以及中方反制措施背景。每期固定包含「当前生效的对华芯片制裁与管制措施总表」，状态列随每周更新。
+</div>
+
+<footer>
+  数据与观点仅供研究参考，请以官方原文为准。 ｜ <a href="https://github.com/leoheihei/chipset_sanction_on_China">GitHub 仓库</a>
+</footer>
+
+</div>
+<script>
+// 自动统计归档期数并标记最新一期
+(function(){
+  var items = document.querySelectorAll('ul.archive > li');
+  document.getElementById('stat-count').textContent = items.length;
+})();
+</script>
+</body>
+</html>
