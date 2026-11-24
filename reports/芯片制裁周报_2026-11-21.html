@@ -47,11 +47,17 @@
   footer{margin-top:44px;font-size:12.5px;color:var(--muted);border-top:1px solid var(--border);padding-top:14px;}
   .src{font-size:13px;color:var(--muted);}
   code{background:#f3f4f6;border-radius:4px;padding:0 4px;font-size:13px;}
+  a.back-home{display:inline-flex;align-items:center;gap:6px;background:var(--card);
+    border:1px solid var(--border);border-radius:999px;padding:6px 16px;margin-bottom:14px;
+    font-size:13.5px;color:var(--accent);text-decoration:none;box-shadow:0 1px 2px rgba(0,0,0,.04);
+    transition:border-color .15s, box-shadow .15s;}
+  a.back-home:hover{border-color:var(--accent);box-shadow:0 2px 8px rgba(29,78,216,.12);text-decoration:none;}
 </style>
 </head>
 <body>
 <div class="wrap">
 
+<a class="back-home" href="../index.html">← 返回归档主页</a>
 <header class="report-head">
   <h1>美国对华半导体制裁与出口管制周报</h1>
   <div class="range">统计区间：2026 年 11 月 14 日（周六）— 2026 年 11 月 21 日（周六）</div>
@@ -242,6 +248,7 @@
 
 <footer>
 本报告由自动化任务于 2026-11-21 生成，检索窗口 2026-11-14 至 2026-11-21。一手来源均附官方链接；标注"媒体转引"者仅作为官方动作的补充说明，不作为独立事实来源。下期周报将默认覆盖其后 7 天并衔接本期窗口。
+<p style="margin:10px 0 0;"><a class="back-home" href="../index.html">← 返回归档主页</a></p>
 </footer>
 </div>
 </body>
