@@ -15,7 +15,7 @@
   body{margin:0;background:var(--bg);color:var(--ink);
     font-family:"Microsoft YaHei","PingFang SC","Noto Sans CJK SC","Source Han Sans SC",sans-serif;
     line-height:1.75;font-size:15.5px;}
-  .wrap{max-width:860px;margin:0 auto;padding:32px 20px 64px;}
+  .wrap{max-width:1160px;margin:0 auto;padding:32px 20px 64px;}
   header.hero{background:linear-gradient(135deg,#1e3a8a,#1d4ed8);color:#fff;
     border-radius:14px;padding:40px 36px 32px;margin-bottom:14px;}
   header.hero h1{margin:0 0 12px;font-size:28px;letter-spacing:1px;}
@@ -41,6 +41,12 @@
   ul.archive .title .tag.latest{background:#ecfdf5;color:#065f46;}
   ul.archive .desc{font-size:14px;color:var(--muted);margin:6px 0 4px;}
   ul.archive .date{font-size:12.5px;color:var(--accent);}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:12px;
+    padding:20px 24px;margin-bottom:18px;box-shadow:0 1px 2px rgba(0,0,0,.04);}
+  .plain{font-size:14.5px;color:#374151;}
+  table{border-collapse:collapse;width:100%;font-size:14px;margin-top:10px;}
+  th,td{border:1px solid var(--border);padding:8px 10px;text-align:left;vertical-align:top;}
+  th{background:#f3f4f6;font-weight:600;}
   footer{margin-top:44px;font-size:12.5px;color:var(--muted);border-top:1px solid var(--border);padding-top:14px;}
   a{color:var(--accent);text-decoration:none;}
   a:hover{text-decoration:underline;}
@@ -78,9 +84,41 @@
 <!-- ARCHIVE:END -->
 </ul>
 
+<!-- MEASURES:START 每期周报任务更新本节：新增行接末尾顺延编号、更新状态与链接列、删除失效行后重新连续编号 -->
+<h2 id="measures">当前生效的对华芯片制裁与管制措施总表</h2>
+<div class="card plain" style="overflow-x:auto;">
+<p style="margin-top:0;"><b>状态与链接列随每期更新。</b>截至本报告期末（2026-11-28）仍在生效或程序推进中的全部美国对华芯片相关制裁、禁令与措施一览（本期新增第 21、22 行，第 6、11、13 行状态/内容随本周动态更新）。</p>
+<table>
+<tr><th style="width:4%;">编号</th><th style="width:6%;">类别</th><th style="width:15%;">措施 / 文件名称</th><th style="width:6%;">机构</th><th style="width:9%;">发布 / 生效日期</th><th style="width:43%;">核心内容</th><th style="width:7%;">状态</th><th style="width:10%;">原文和参考链接</th></tr>
+<tr><td>1</td><td>法律授权</td><td>《出口管制改革法》（ECRA 2018，Pub. L. 115-232）</td><td>国会</td><td>2018-08-13</td><td>EAR、实体清单、FDPR、行政令管制的法律基础</td><td>生效</td><td><a href="https://www.govinfo.gov/app/details/PLAW-115publ232" target="_blank">Pub. L. 115-232 全文（govinfo）</a></td></tr>
+<tr><td>2</td><td>出口管制规则</td><td>先进计算与超算物项出口管制（87 FR 62156）</td><td>BIS</td><td>公布 2022-10-13 / 生效 2022-10-21</td><td>设立 ECCN 3A090/4A090，以总处理性能（TPP）+性能密度设阈，禁运高端 AI 芯片（A100/H100 级）及超算物项对华（含澳门）出口</td><td>生效</td><td><a href="https://www.govinfo.gov/app/details/FR-2022-10-13/2022-21657" target="_blank">联邦公报原文（FR Doc. 2022-21657）</a></td></tr>
+<tr><td>3</td><td>出口管制规则</td><td>先进计算管制补充规则（88 FR 72866）</td><td>BIS</td><td>公布 2023-10-25 / 生效 2023-11-17</td><td>改以带宽密度设阈，将英伟达 A800/H800 等"降配版"重新纳管；收紧"美国人员"对华半导体/AI 活动支持限制</td><td>生效</td><td><a href="https://www.govinfo.gov/app/details/FR-2023-10-25/2023-23048" target="_blank">联邦公报原文（FR Doc. 2023-23048）</a></td></tr>
+<tr><td>4</td><td>出口管制规则</td><td>半导体制造设备管制（87 FR 62186）；补充规则（2024-12-02 增订）</td><td>BIS</td><td>2022-10 起分阶段生效；2025 年起</td><td>对 14nm 以下逻辑、18nm 以下 DRAM、128 层以上 NAND 相关设备（沉积、刻蚀、清洗、外延、HBM 相关等 1B 类）管制；2024-12 增补设备类型并扩展至第三国转运路径</td><td>生效</td><td><a href="https://www.govinfo.gov/app/details/FR-2022-10-13/2022-21570" target="_blank">2022 设备规则原文</a>；<a href="https://www.federalregister.gov/documents/2024-12-02" target="_blank">2024-12-02 联邦公报期（设备与名单增补）</a></td></tr>
+<tr><td>5</td><td>出口管制规则</td><td>GAAFET（3/2nm）EDA 软件管制</td><td>BIS</td><td>2022-10 生效</td><td>3nm 及以下 GAAFET 结构 EDA 设计软件须许可</td><td>生效</td><td><a href="https://www.govinfo.gov/app/details/FR-2022-10-13/2022-21657" target="_blank">2022-10-13 同期规则（§734/742 修订）</a></td></tr>
+<tr><td>6</td><td>出口管制规则</td><td>实体清单（Entity List，EAR Supp. 4 to Part 744）</td><td>BIS（ERC 跨部门）</td><td>持续增补</td><td>华为/海思、中芯国际、超算中心及半导体设备与材料企业等中国实体逾 500 家，出口须许可并适用"推定拒绝"；2024-12-02 一次性新增 140 家（北方华创、中微、拓荆等）；<b>最近一次增列为 2026-11-23（见第 21 行）</b></td><td>生效</td><td><a href="https://www.bis.gov/entity-list" target="_blank">BIS 实体清单专页</a>；<a href="https://www.govinfo.gov/app/details/FR-2024-12-02/2024-28267" target="_blank">2024-12 增补 140 家公告</a></td></tr>
+<tr><td>7</td><td>出口管制规则</td><td>实体清单"关联主体"扩展规则（暂停期内）</td><td>BIS</td><td>2025-09-29 公布；暂停延至 2027-01-10</td><td>被列实体持股 50% 及以上子公司自动适用同等管制；因中美经贸磋商暂停执行，BIS 2026-11-09 再延至 2027-01-10；国会拟经 NDAA 修正案将其入法固化</td><td>暂停中<br>（延期至 2027-01-10）</td><td><a href="https://media.bis.gov/press-release/department-commerce-expands-entity-list-cover-affiliates-listed-entities" target="_blank">BIS 新闻稿（2025-09-29）</a></td></tr>
+<tr><td>8</td><td>出口管制规则</td><td>先进计算 FDPR + 实体清单"脚注 4/5"规则</td><td>BIS</td><td>2022-10 起</td><td>使用特定美国技术/设备的外国产品用于中国先进计算/军事用途即受美管辖；华为/海思等（脚注 4）及超算类（脚注 5）适用极低 de minimis 门槛</td><td>生效</td><td><a href="https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-744/appendix-Supplement%20No.%204%20to%20Part%20744" target="_blank">eCFR Part 744 Supp. 4（实体清单及脚注原文）</a></td></tr>
+<tr><td>9</td><td>出口管制规则</td><td>关闭外国所有人中国晶圆厂许可例外</td><td>BIS</td><td>2025-08-29</td><td>撤销台积电南京、三星（苏州）等外资在华晶圆厂的设备维护与供应豁免，维修备件须申请许可</td><td>生效</td><td><a href="https://media.bis.gov/press-release/department-commerce-closes-export-controls-loophole-foreign-owned-semiconductor-fabs-china" target="_blank">BIS 新闻稿（2025-08-29）</a></td></tr>
+<tr><td>10</td><td>出口管制规则</td><td>对华半导体出口许可审查政策修订</td><td>BIS</td><td>2026-01-14</td><td>调整 H20 等特定对华先进计算芯片许可审查政策，附加安全核查等条件；现行政策下 H200 仍为对华可售（须许可）的最先进物项</td><td>生效</td><td><a href="https://media.bis.gov/press-release/department-commerce-revises-license-review-policy-semiconductors-exported-china" target="_blank">BIS 新闻稿（2026-01-14）</a></td></tr>
+<tr><td>11</td><td>出口管制规则</td><td>《解决先进半导体远程访问问题》IFR（FR Doc. 2026-23529）</td><td>BIS（财政部/NSC 主导）</td><td>2026-11-16 发布 / 2026-11-19 生效</td><td>全球远程算力管制（对 D:5/澳门总部企业供应超 1200 万 aggregate TPP 须许可）；印尼/马来西亚/新加坡/泰国/巴西五国许可要求；收紧晶圆厂/封测厂义务；废除 AI 扩散规则。执行动态：英伟达已暂停向马、新、泰、印尼发运搭载其芯片服务器；在途过渡至 12-21、存量数据中心许可期至 2027-02-17</td><td>生效<br>（上周新生效）</td><td><a href="https://www.federalregister.gov/documents/2026-11-19/2026-23529/addressing-remote-access-to-advanced-semiconductors" target="_blank">联邦公报原文</a>；<a href="https://media.bis.gov/press-release/bis-issues-rule-addressing-remote-access-american-super-intelligence-technology" target="_blank">BIS 新闻稿</a></td></tr>
+<tr><td>12</td><td>投资禁令</td><td>EO 14105 对外投资审查（31 CFR Part 850）</td><td>财政部</td><td>2023-08-09 签署 / 2025-01-02 生效</td><td>禁止或要求报备美国主体投资中国先进半导体（含 EDA、先进封装、超算）、量子、军事 AI 等领域</td><td>生效</td><td><a href="https://www.federalregister.gov/documents/2023-08-11/2023-17453/addressing-united-states-investments-in-certain-national-security-technologies-and-products-of-countries-of-concern" target="_blank">EO 14105 原文</a>；<a href="https://home.treasury.gov/policy-issues/international/outbound-investment-program" target="_blank">财政部 OISP 专页</a></td></tr>
+<tr><td>13</td><td>投资禁令</td><td>COINS 法案（FY2026 NDAA，2025-12-18）及实施规则草案（Part 851，91 FR 67396）</td><td>国会 / 财政部</td><td>意见期至 2026-12-07；定稿限 2027-03</td><td>审查机制入法并扩围（新增超算、高超声速、生物技术；多项"报备类"升为"禁止类"；关注国扩至古巴、伊朗、朝鲜、俄、委内瑞拉）；<b>意见期 12-07 截止在即</b></td><td>推进中</td><td><a href="https://home.treasury.gov/policy-issues/international/outbound-investment-program" target="_blank">财政部专页（含 NPRM，FR Doc. 2026-21786）</a></td></tr>
+<tr><td>14</td><td>关税</td><td>Section 301 对华关税（清单 1–3 各 25%、4A 7.5%）</td><td>USTR</td><td>2018-07 起 / 2019-09</td><td>对华技术转让 301 调查项下关税基盘；2026-10-07 四年复审确认继续有效</td><td>生效</td><td><a href="https://ustr.gov/issue-areas/enforcement/section-301-investigations/ted-section-301-china" target="_blank">USTR 301 对华调查专页</a></td></tr>
+<tr><td>15</td><td>关税</td><td>301 四年复审半导体加征至 50%</td><td>USTR</td><td>2025-01-01 起</td><td>半导体产品（9903.91 项下）附加关税自 25% 升至 50%</td><td>生效</td><td><a href="https://ustr.gov/trade-enforcement/section-301-investigations/tariff-actions" target="_blank">USTR 关税措施页</a>；<a href="https://www.federalregister.gov/documents/2026-11-10/2026-22925/notice-of-product-exclusion-extensions-chinas-acts-policies-and-practices-related-to-technology" target="_blank">最新排除延长公告（91 FR 72610）</a></td></tr>
+<tr><td>16</td><td>关税</td><td>301 强迫劳动关税 12.5%</td><td>USTR</td><td>2026-07-24 起</td><td>对华叠加 12.5% 附加关税</td><td>生效</td><td><a href="https://ustr.gov/" target="_blank">USTR 官网公告栏目</a></td></tr>
+<tr><td>17</td><td>关税</td><td>Section 232 先进半导体 25% 关税（91 FR 2443）</td><td>商务部</td><td>2026-01-15 起</td><td>对超过特定性能门槛的高端 AI 芯片及衍生组件加征 25%，美数据中心/研发/公共部门用途豁免</td><td>生效</td><td><a href="https://www.federalregister.gov/" target="_blank">联邦公报检索：91 FR 2443</a></td></tr>
+<tr><td>18</td><td>清单与采购限制</td><td>国防部 1260H"中国军事公司"清单（含长鑫存储、华为、阿里巴巴等）；FY23 NDAA 涉 CXMT 采购禁令</td><td>国防部 / 国会</td><td>持续更新；采购禁令 2026-06-30 起</td><td>联邦政府采购与合同限制；实体清单列入的前置信号；阿里巴巴诉 1260H 案推进中（10-26 获部分禁令保护）；国会 11-12 致函要求列 CXMT</td><td>生效<br>（诉讼并行）</td><td><a href="https://www.cotton.senate.gov/wp-content/uploads/2026-11-11.12-26-CXMT-Letter.pdf" target="_blank">参议员科顿函（2026-11-12）</a>；<a href="https://www.global.chinadaily.com.cn/a/202611/24/WS6b054f9ee4b03ebf8519e648.html" target="_blank">1260H 诉讼近况（中国日报/路透）</a></td></tr>
+<tr><td>19</td><td>中方反制<br>（背景）</td><td>镓、锗、石墨、锑出口管制（2023-07 起分步）；2025 年稀土及磁体出口管制</td><td>中国商务部</td><td>2023-07 / 2025-10 起</td><td>对美国及第三国实施镓/锗/锑/稀土等关键矿物出口管制</td><td>多数生效<br>（对美部分有磋商性放宽）</td><td><a href="https://www.mofcom.gov.cn/" target="_blank">商务部官网（政策发布/公告栏目）</a></td></tr>
+<tr><td>20</td><td>中方反制<br>（背景）</td><td>不可靠实体清单（11 家美企）与出口管制管控名单（16 家美企）</td><td>中国商务部</td><td>2025-04-04 公布 / 自 2026-11-10 暂停 2 个月</td><td>落实中美第八轮经贸磋商共识暂停至 2027-01-09，可个案申请交易；本周中方仅口头抗议（11-23、11-26），无新反制落地</td><td>暂停中</td><td><a href="https://www.mofcom.gov.cn/xwfb/xwfyrth/art/2026/art_5baeb69ccc0f44cb83dea8ac587dd327.html" target="_blank">商务部答记者问（2026-11-09）</a></td></tr>
+<tr><td>21</td><td>清单与采购限制</td><td>《实体清单增补》最终规则：Megaspeed 网络 + 阿里新加坡子公司 Apex（91 FR 76148，FR Doc. 2026-23999）</td><td>BIS（ERC）</td><td>2026-11-23 生效 / 11-25 刊登</td><td>马、新、泰 7 家算力转运网络实体（含阿里巴巴 Apex）列入实体清单；全部受 EAR 管辖物项须许可、推定拒绝；在途货物宽限至 2026-12-23；马来西亚当局已配合呼吁数据中心业者停止服务</td><td><b>本周新生效</b></td><td><a href="https://www.federalregister.gov/documents/2026-11-25/2026-23999/additions-to-the-entity-list" target="_blank">联邦公报原文</a>；<a href="https://www.govinfo.gov/content/pkg/FR-2026-11-25/pdf/2026-23999.pdf" target="_blank">PDF</a></td></tr>
+<tr><td>22</td><td>关税</td><td>"制造业结构性产能过剩"301 裁定与拟议关税（14 经济体；对华最高 20%）</td><td>USTR</td><td>2026-11-25 公布拟议</td><td>对华拟对非附件商品加征最高 20%（Annex A 10%，Annex B 豁免），唯一叠加征税经济体、谈判破裂可上调；电子/半导体列为重点部门；意见期至 2027-01-05、听证 01-25、最早 2027 年初落地</td><td><b>推进中<br>（本周新公布）</b></td><td><a href="https://ustr.gov/about/policy-offices/press-office/press-releases/2026/november/ustr-makes-determinations-and-proposes-actions-14-section-301-investigations-relating-structural" target="_blank">USTR 新闻稿（2026-11-25）</a></td></tr>
+</table>
+</div>
+<!-- MEASURES:END -->
+
 <h2>关于本项目</h2>
 <div class="note" style="background:var(--card);border-color:var(--border);color:var(--ink);font-size:14px;">
-本仓库以 GitHub Pages 方式发布每周定期生成的《美国对华芯片制裁周报》。统计范围覆盖：对华芯片出口管制新规（先进计算芯片、半导体设备、EDA、HBM）、实体清单增删、FDPR 与"脚注"规则、对华投资禁令、301/232 关税、行政令、国会立法动向、联合管制协调，以及中方反制措施背景。每期固定包含「当前生效的对华芯片制裁与管制措施总表」，状态列随每周更新。
+本仓库以 GitHub Pages 方式发布每周定期生成的《美国对华芯片制裁周报》。统计范围覆盖：对华芯片出口管制新规（先进计算芯片、半导体设备、EDA、HBM）、实体清单增删、FDPR 与"脚注"规则、对华投资禁令、301/232 关税、行政令、国会立法动向、联合管制协调，以及中方反制措施背景。本页固定刊载「当前生效的对华芯片制裁与管制措施总表」，状态与链接列随每周更新；各期周报仅收录当周动态与附录。
 </div>
 
 <footer>
